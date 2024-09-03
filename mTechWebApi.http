@@ -1,0 +1,6 @@
+@mTechWebApi_HostAddress = http://localhost:5206
+
+GET {{mTechWebApi_HostAddress}}/api/users
+Accept: application/json
+
+###
