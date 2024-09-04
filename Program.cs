@@ -31,6 +31,7 @@ else
 app.UseHttpsRedirection();
 app.UseStaticFiles();
 
+app.UsePathBase(new PathString("/api"));
 app.UseRouting();
 
 // Usa CORS

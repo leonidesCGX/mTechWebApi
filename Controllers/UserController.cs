@@ -2,7 +2,7 @@ using Microsoft.AspNetCore.Mvc;
 using mTechWebApi.str;
 using System.Collections.Generic;
 
-[Route("api/users")]
+[Route("users")]
 [ApiController]
 public class UserController : ControllerBase
 {
@@ -13,7 +13,7 @@ public class UserController : ControllerBase
         _userService = userService;
     }
 
-    [HttpGet]
+    [HttpGet()]
     public ActionResult<IEnumerable<User>> GetUsers()
     {
         var users = _userService.GetUsers();
